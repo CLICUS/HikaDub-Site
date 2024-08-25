@@ -27,3 +27,4 @@ jobs:
           requirements: requirements.txt
           publish-to-pages: ${{ github.event_name == 'push' }}
           checkout-current-repo: true
+
