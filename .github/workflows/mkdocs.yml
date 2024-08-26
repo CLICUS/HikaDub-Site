@@ -25,6 +25,6 @@ jobs:
         uses: Reloaded-Project/devops-mkdocs@v1
         with:
           requirements: requirements.txt
-          publish-to-pages: ${{ github.event_name == 'push' }}
+          publish-to-pages: ${{ github.event_name == 'pull_request' }}
           checkout-current-repo: true
 
