@@ -2,7 +2,7 @@
 # mkdocs-material: https://squidfunk.github.io/mkdocs-material/
 # mkdocs: https://www.mkdocs.org/user-guide/configuration/
 site_name: HikaDub
-site_url: http://clikus.github.com/hikadub
+site_url: http://clikus.github.com/HikaDub-Site
 site_dir: public
 docs_dir: ./docs
 
