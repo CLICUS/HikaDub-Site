@@ -3,12 +3,12 @@ name: MkDocs Build and Deploy
 on:
   workflow_dispatch:
   push:
-    branches: [ deploy ]
+    branches: [ main ]
     paths:
       - "mkdocs.yml"
       - "docs/**"
   pull_request:
-    branches: [ deploy ]
+    branches: [ main ]
     paths:
       - "mkdocs.yml"
       - "docs/**"
@@ -25,6 +25,6 @@ jobs:
         uses: Reloaded-Project/devops-mkdocs@v1
         with:
           requirements: requirements.txt
-          publish-to-pages: ${{ github.event_name == 'pull_request' }}
+          publish-to-pages: ${{ github.event_name == 'push' }}
           checkout-current-repo: true
 
